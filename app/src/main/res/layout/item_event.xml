@@ -1,0 +1,100 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/event_card_background"
+    android:elevation="4dp"
+    android:layout_marginBottom="12dp"
+    android:clipToPadding="false">
+
+    <!-- Event Time Badge -->
+    <TextView
+        android:id="@+id/event_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="4dp"
+        android:background="@drawable/time_background"
+        android:layout_gravity="end"
+        android:text="3:30 PM" />
+
+    <!-- Event Name -->
+    <TextView
+        android:id="@+id/event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/primaryText"
+        android:layout_marginTop="8dp"
+        android:text="Event Name"/>
+
+    <!-- Event Type and Points Tags -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:id="@+id/event_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:background="@drawable/tag_background"
+            android:textColor="@android:color/white"
+            android:text="Other"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/event_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:background="@drawable/tag_background"
+            android:textColor="@android:color/white"
+            android:text="+80 pts" />
+    </LinearLayout>
+
+    <!-- Event Description -->
+    <TextView
+        android:id="@+id/event_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/secondaryText"
+        android:layout_marginTop="8dp"
+        android:text="Event description goes here." />
+
+    <!-- Event Location -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_location"
+            android:tint="@color/secondaryText"
+            android:layout_marginEnd="4dp"/>
+
+        <TextView
+            android:id="@+id/event_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/secondaryText"
+            android:text="Siebel 1st Floor Atrium"/>
+    </LinearLayout>
+
+</LinearLayout>
